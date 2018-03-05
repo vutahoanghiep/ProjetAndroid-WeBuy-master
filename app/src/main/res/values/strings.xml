@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeBuy</string>
+    <string name="n"></string>
+    <string name="textViewLabelAdresse">Adresse: </string>
+    <string name="textViewLabelPromos">Promos: </string>
+    <string name="textViewLabelPrixHorsPromo">Prix hors promo: </string>
+    <string name="textViewLabelPrixPromo">Prix promo: </string>
+    <string name="textViewLabelQuantiteMin">Qté min: </string>
+    <string name="textViewLabelQuantiteAAcheter">Qté à acheter: </string>
+
+</resources>

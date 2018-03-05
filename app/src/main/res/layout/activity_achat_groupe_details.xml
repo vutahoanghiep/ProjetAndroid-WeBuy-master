@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewProd"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/laitlactel"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:id="@+id/textViewNomProd"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Nom produit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLanceur"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Lancé par"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProd"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomProd" />
+
+    <TextView
+        android:id="@+id/textViewPrixHorsPromo"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Prix hors promo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProd" />
+
+    <TextView
+        android:id="@+id/textViewPrixPromo"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Prix promo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrixHorsPromo" />
+
+    <TextView
+        android:id="@+id/textViewQteMin"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Quantité min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrixPromo" />
+
+    <TextView
+        android:id="@+id/textViewQteAAcheter"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Quantité à acheter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQteMin" />
+
+    <TextView
+        android:id="@+id/textViewQteRestante"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:text="Quantité restante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQteAAcheter" />
+
+    <TextView
+        android:id="@+id/textViewMembresIns"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Membres inscrits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQteRestante" />
+
+    <Button
+        android:id="@+id/btnInscription"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="s'inscrire"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMembresIns" />
+
+</android.support.constraint.ConstraintLayout>

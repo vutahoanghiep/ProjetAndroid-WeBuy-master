@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeBuy</string>
+    <string name="textViewLabelAdresse">Address:\u0020 </string>
+    <string name="textViewLabelPromos">Special offers:\u0020 </string>
+    <string name="textViewLabelPrixHorsPromo">Normal price:\u0020</string>
+    <string name="textViewLabelPrixPromo">Special price:\u0020</string>
+    <string name="textViewLabelQuantiteMin">Qty min:\u0020</string>
+    <string name="textViewLabelQuantiteAAcheter">Qty to buy:\u0020</string>
+</resources>

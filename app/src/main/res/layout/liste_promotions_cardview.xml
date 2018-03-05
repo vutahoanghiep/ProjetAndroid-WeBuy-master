@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:elevation="5dp"
+        card_view:cardCornerRadius="12dp"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageViewProduit"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewNomProduit"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toEndOf="@+id/imageViewProduit"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:text="NomPromotion" />
+
+            <TextView
+                android:id="@+id/textViewPrixHorsPromo"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                card_view:layout_constraintEnd_toEndOf="@+id/textViewNomProduit"
+                card_view:layout_constraintStart_toStartOf="@+id/textViewNomProduit"
+                card_view:layout_constraintTop_toBottomOf="@+id/textViewNomProduit"
+                tools:text="Prix hors promotion" />
+
+            <TextView
+                android:id="@+id/textViewPrixPromo"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                card_view:layout_constraintEnd_toEndOf="@+id/textViewPrixHorsPromo"
+                card_view:layout_constraintStart_toStartOf="@+id/textViewPrixHorsPromo"
+                card_view:layout_constraintTop_toBottomOf="@+id/textViewPrixHorsPromo"
+                tools:text="Prix promotion" />
+
+            <TextView
+                android:id="@+id/textViewQuantiteMin"
+                android:layout_width="107dp"
+                android:layout_height="20dp"
+                card_view:layout_constraintEnd_toStartOf="@+id/textViewQuantiteAAcheter"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toStartOf="@+id/textViewPrixPromo"
+                card_view:layout_constraintTop_toBottomOf="@+id/textViewPrixPromo"
+                tools:text="Quantité min" />
+
+            <TextView
+                android:id="@+id/textViewQuantiteAAcheter"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                card_view:layout_constraintEnd_toEndOf="@+id/textViewPrixPromo"
+                card_view:layout_constraintStart_toEndOf="@+id/textViewQuantiteMin"
+                card_view:layout_constraintTop_toTopOf="@+id/textViewQuantiteMin"
+                tools:text="Quantité à acheter" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

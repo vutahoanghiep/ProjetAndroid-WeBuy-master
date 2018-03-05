@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imageViewLogoProduit"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNomProduit"
+        android:layout_width="225dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLogoProduit"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nom produit" />
+
+    <TextView
+        android:id="@+id/textViewPrixHorsPromo"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLogoProduit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomProduit"
+        tools:text="Prix hors promo" />
+
+    <TextView
+        android:id="@+id/textViewPrixPromo"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLogoProduit"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrixHorsPromo"
+        tools:text="Prix promo" />
+
+    <TextView
+        android:id="@+id/textViewQuantiteMin"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewQuantiteAAcheter"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLogoProduit"
+        tools:text="Quantité min" />
+
+    <TextView
+        android:id="@+id/textViewQuantiteAAcheter"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuantiteMin"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPrixPromo"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Quantité à acheter" />
+
+</android.support.constraint.ConstraintLayout>
